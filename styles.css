@@ -1,0 +1,571 @@
+/* styles.css */
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    margin-bottom: 100px;
+    clear: both;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+nav {
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+}
+
+a.button,
+.back-to-home {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    color: #333;
+    background-color: #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    z-index: 1;
+}
+
+a.button:hover,
+.back-to-home:hover {
+    background-color: #bbb;
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+}
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 90px;
+  }
+.footer {
+    position: absolute;
+    bottom: 0;
+    margin-top: auto;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    pointer-events: none;
+  }
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://i.ibb.co/wQZVxxk/wave.png");
+    background-size: 1000px 100px;
+  }
+  .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+  }
+  
+  .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+  }
+  
+  .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+  }
+  
+  .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+  }
+  
+  @keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+.keywords {
+    color: rgb(113, 23, 23);
+  }
+
+/* Добавленные стили */
+.sub-section {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #e4e0e0;
+    border-radius: 5px;
+    display: none; /* Скрываем подразделы по умолчанию */
+}
+
+.sub-section a {
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #333;
+}
+
+.sub-section a:hover {
+    text-decoration: underline;
+}
+
+.bordered-section {
+    border: 2px solid #8a4bff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+
+.scores {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+nav {
+    background-color: #ecf0f1;
+    padding: 10px;
+}
+
+.button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.sub-section {
+    margin: 10px;
+}
+
+/* Добавленные стили для "Math" раздела */
+h2 {
+    color: #3498db;
+}
+
+.cb-menu-list-d9-heading {
+    background-color: #ecf0f1;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cb-menu-list-d9-heading h4 {
+    margin: 0;
+}
+
+.button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+.math-img img {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    background-color: #ecf0f1;
+    padding: 10px;
+}
+
+.button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.math-img img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h2 {
+    color: #3498db;
+}
+
+.video-section {
+    margin-top: 20px;
+}
+
+.khan-academy {
+    margin-top: 20px;
+}
+
+
+/* Добавленные стили для видео-секции */
+.video-section {
+    margin-top: 20px;
+    text-align: center; /* Центрирование содержимого */
+}
+
+.video-section iframe {
+    max-width: 100%; /* Сделать видео адаптивным */
+    margin-bottom: 15px; /* Добавить отступ между видео, если нужно */
+}
+/* Стилизация общего контейнера */
+/* Стилизация общего контейнера */
+.algebra-section {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Стилизация текста внутри контейнера */
+.algebra-section p {
+    font-size: 16px;
+    color: #257da5;
+}
+
+/* Стилизация списка */
+.algebra-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Стилизация элементов списка */
+.algebra-section li {
+    font-size: 14px;
+    color: #0066cc;
+    margin-bottom: 5px;
+}
+/* styles.css */
+
+.header {
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 20px 10px;
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+
+    header h1 {
+        display: inline;
+    }
+  }
+  .logo {
+    max-width: 100px;
+  }
+
+nav {
+    background-color: #ecf0f1;
+    padding: 10px;
+}
+
+.button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.math-img img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+h2 {
+    color: #3498db;
+}
+
+.container {
+    width: 80%;
+    padding: 20px;
+    margin: 80px auto; /* auto для отступов по горизонтали, 80px для отступа сверху */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+  
+  .question {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .options {
+    margin-bottom: 20px;
+  }
+  
+  .option {
+    display: block;
+    margin-bottom: 10px;
+}
+.option input[type="radio"]:checked + label {
+    background-color: #428bca; /* Изменяем цвет фона метки при выборе варианта */
+    color: #fff; /* Изменяем цвет текста для лучшей видимости */
+}
+
+.option label {
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 0.3s; /* Анимация изменения фона */
+    border-radius: 4px;
+}
+
+.option input[type="radio"]:checked + label {
+    background-color: #428bca; /* Изменяем цвет фона всего блока варианта при выборе */
+    color: #fff; /* Изменяем цвет текста для лучшей видимости */
+}
+
+
+.option label {
+    display: inline-block; /* Добавляем блочный режим для label */
+    padding: 15px 30px; /* Увеличиваем заполнение */
+    background-color: #8716dd; /* Добавляем фоновый цвет для кнопок */
+    border-radius: 20px; /* Закругляем углы кнопок */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option label:hover {
+    background-color: #3b72b0; /* Изменяем цвет фона при наведении */
+}
+
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #428bca;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+  }
+  
+  .button:hover {
+    background-color: #3071a9;
+  }
+  
+  .result {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .hide{
+    display: none;
+  }
+
+  #submit {
+    /* Общие стили кнопки */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b527b5;
+    color: #1faec4;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+#submit:hover {
+    /* Стили при наведении курсора мыши */
+    background-color: #3071a9;
+}
+.reading-img {
+    position: relative; /* Make the container relative to allow absolute positioning */
+    margin-top: 20px; /* Adjust as needed */
+    overflow: hidden; /* Hide any overflow */
+    z-index: 1;
+}
+
+.reading-img img {
+    width: 100%; /* Ensure the image fills its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any default inline styling */
+    background: red;
+    transition: width 2s;
+}
+
+/* Add a hover effect to scale the image */
+.reading-img img:hover {
+    transform: scale(1.05); /* Scale the image by 5% on hover */
+}
+.reading-section {
+    padding: 20px;
+    background-color: #f8f9fa; /* Цвет фона */
+    border-radius: 10px; /* Закругление углов */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+.reading-section p {
+    font-size: 18px; /* Размер шрифта */
+    line-height: 1.6; /* Межстрочный интервал */
+    margin-bottom: 15px; /* Отступ снизу */
+}
+
+.reading-section ul {
+    list-style-type: none; /* Убираем маркеры у списка */
+    padding-left: 0; /* Убираем отступ слева */
+}
+
+.reading-section li {
+    font-size: 16px; /* Размер шрифта */
+    line-height: 1.5; /* Межстрочный интервал */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+/* Анимация */
+.reading-section {
+    animation: fadeInUp 0.5s ease; /* Применяем анимацию появления */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.question {
+    white-space: pre-wrap;
+}
