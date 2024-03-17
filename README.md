@@ -1,0 +1,5 @@
+- 🌱 I’m currently learning python, data science and web-development
+- 🤔 I’m looking for help with web development
+- 📫 How to reach me: dulat.kamytbek25@fizmat.kz
+- ⚡ Fun fact: my SAT is 1480
+-->
