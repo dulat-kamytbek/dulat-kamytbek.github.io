@@ -42,6 +42,13 @@ h1.contact-heading {
   -webkit-background-clip: text; 
   background: radial-gradient(#ffbc00, #ff65aa);
 }
+p.intro:first-letter { 
+  font-size: 100px; 
+  display: block; 
+  float: left; 
+  line-height: .5; 
+  margin: 15px 15px 10px 0; 
+}
 
 section {
     padding: 20px;
