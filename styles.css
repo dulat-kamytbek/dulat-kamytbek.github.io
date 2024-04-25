@@ -37,6 +37,11 @@ a.button:hover,
     background-color: #bbb;
     text-decoration: underline;
 }
+h1.contact-heading { 
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text; 
+  background: radial-gradient(#ffbc00, #ff65aa);
+}
 
 section {
     padding: 20px;
